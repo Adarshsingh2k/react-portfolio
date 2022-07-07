@@ -42,7 +42,7 @@ const Project = () => {
         const date = new Date();
         console.log(date)
 
-        fetch("https://api.github.com/repos/Adarshsingh2k/30-Days-Of-Code/commits?")
+        fetch("https://api.github.com/repos/Adarshsingh2k/30-Days-Of-Code/commits?per_page=100")
         .then(res=>res.json())
         .then(data=>console.log(data))
     }
